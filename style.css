@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1486783046960-64d2ef697c46?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=);
+}
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+p {
+  font-size: 14px;
+}
+h2 {
+  font-family: 'Proza Libre', sans-serif;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/*
+When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 750px){
+#row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Lora', serif;;
+}
+}
+@media screen and (min-width: 750px){
+.col-sm-4 {
+  height: 450px;
+  width: 300px;
+  background-color: lightgray;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+}
+@media screen and (max-width: 750px){
+#row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Lora', serif;;
+}
+}
+@media screen and (max-width: 750px){
+.col-sm-4 {
+  height: 450px;
+  width: 300px;
+  background-color: lightgray;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+}
+.button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Proza Libre', sans-serif;
+  }
+.boxphotos {
+    height: 150px;
+    width: 200px;
+}
